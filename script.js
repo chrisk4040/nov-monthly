@@ -1,3 +1,20 @@
+document.getElementById('startquest').addEventListener('click', function() {
+
+let adjective = prompt("Enter an adjective:")
+let noun = prompt("Enter a noun:")
+let verb = prompt("Enter a verb:")
+let place = prompt("Enter a place:")
+let hero = prompt("Enter hero's Name:")
+
+let Story = `<p>In the land of ${place}, there lived a ${adjective} hero named ${hero}.</p> 
+
+<p>One day, ${hero} ${verb} a fearsome ${noun} that threatened the kingdom.</p> 
+
+<p>The battle was fierce, but ${hero} 
+emerged victorious, bringing peace back to ${place}.</p>`
+
+document.getElementById('story').innerText = story;
+});
 
 
 
@@ -22,23 +39,3 @@
 
 
 
-
-
-
-
-/*let userName = prompt('what is your name!')
-let userQuest = prompt('what is your quest?!')
-let userFavColor = prompt('What is your favorite color?')
-let swallowAirspeed = prompt('What is the air speed of an unlaiden swallow?')
-
-
-
-let myStory = `<p>
-Hello ${userName}. Answer me these questions three and the other side you'll see.</p>
-
-<p> I see you have already andertrf, do your quest ${userQuest}.
-</p>
-`
-console.log(myStory)
-
-document.getElementById('story') .innerHTML = myStory  */
